@@ -1,0 +1,251 @@
+html {
+  background-color: #aebdaa;
+}
+
+body{
+  font-family: Calibri, sans-serif;
+  font-size: 87%;
+}
+header{
+  color: #51634c;
+  padding-top: 20px;
+  padding-bottom: 0px;
+}
+header h1{
+  margin: 0;
+  font-family: Times New Roman 
+  font-weight: normal;
+  font-size: 165%;
+
+}
+header p{
+  margin: 0;
+}
+
+.container {
+  width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #FFF;
+  padding-left: 40px;
+  padding-right: 40px; 
+  box-sizing: border-box;
+}
+
+.content-area {
+  border-top: 3px solid #a2b09e;
+  border-bottom: 3px solid #a2b09e;
+  box-sizing: border-box;
+}
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+.main-area {
+  width: 55%;
+  float: left;
+  padding-right: 40px;
+  box-sizing: border-box; 
+}
+
+.sidebar {
+  width: 40%;
+  float: left;
+  color: #989e96;
+  background-color: #d6e6d1;
+
+  padding: 20px 20px 20px 20px;
+  box box-sizing: border-box;
+  font-size: 90%;
+}
+
+.fix {
+  clear: both;
+}
+footer{
+  text-align: center;
+  color: #999;
+  font-size: 85%;
+  padding-bottom: 20px; 
+  padding-top: 20px;
+}
+
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+
+.group:after {
+  clear: both;
+}
+
+.group {
+  zoom: 1;
+}
+/*Banner Overlay */ 
+
+.imageBanner{
+  position: relative;
+}
+.imageBanner img{
+  display: block;
+
+}
+
+.imageDescription{
+  position: absolute;
+  color: #FFF;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0,20,0,.65);
+  padding: 5px 5px;
+}
+/*End Image Banner */
+
+/*Table Styles*/ 
+
+table{
+  border-spacing: 0;
+
+  /* Use border-collapse:collapse to thin the borders between cells */;
+  border-collapse: collapse;
+
+  width: 100%;
+}
+table th{
+  text-align: left;
+  background-color: #51634c;
+  color: #FFF;
+  text-shadow: 1px 1px 0 rgba(0,0,0,0.65);
+}
+
+table th, 
+table td{
+  border: 1px solid #51634c;
+  padding: 10px;
+
+  /*Controls vertical alignment */
+  vertical-align: top;
+}
+
+table tbody tr:nth-child(odd) td{
+  background-color: #d6e6d1;
+}
+
+.col-itemName{
+  width: 60%;
+}
+.col-quantity{
+  width: 20%;
+}
+.col-price{
+  width: 20%;
+}
+
+table.groceryList tr :nth-child(2),
+table.groceryList tr :nth-child(3){
+  text-align: center;
+}
+
+/* Form styles */ 
+form {
+  background-color: #ECECEC;
+  padding: 30px 40px;
+}
+input[type="email"],
+input[type="password"],
+input[type="text"],
+input[type="number"],
+select,
+input[type="telephone"]{
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+  padding: 0 10px; 
+  height: 40px;
+  font-family: Calibri, sans-serif;
+  font-size: 100%;
+  margin-bottom: 15px;
+  border: 1px solid #CDCDCD;
+  outline: none;
+}
+
+.checkbox-text{
+  color: #ECECEC;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="text"]:focus,
+input[type="number"]:focus,
+select
+input[type="telephone"]:focus{
+  border: 1px solid #b0f5bd ;
+  box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
+
+}
+
+input[type="submit"]{
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+  background-color: #d6e6d1;
+  color: #FFF;
+  padding: 10px 0;
+  border: 1px solid #798A56;
+  border-radius: 3px;  
+  margin-bottom: 10px;
+}
+
+input[type="submit"]:hover,
+input[type="submit"]:focus{
+  border: 1px solid #535E3B;
+  background-color: #798A56;
+}
+.hiddenLabel{
+  /* We create a class, hidden label and set the below parameters, this is 
+  because just writing display:none ignores the content entirely. Instead we pull
+  the lines out of the flow of the page and is entirely hidden  while maintaining
+  readability for accessibility readers*/
+
+  position: absolute;
+  height: 0;
+  width: 0;
+  overflow: hidden;
+  visibility: hidden;
+
+}
+
+
+/* Site Navigation */
+
+.site-nav{
+  margin-top: 20px; 
+
+}
+.site-nav ul{
+  margin: 0;
+  padding: 0;
+}
+.site-nav li{
+  list-style: none;
+  float: left;
+  margin-right: 5px;
+}
+.site-nav a{
+  display: block;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin-right: 5px; 
+  border: 1px solid #989e96;
+  color: #989e96;
+  border-bottom: none;
+}
+.site-nav a:hover{
+  background-color: #d6e6d1;
+  color: ;
+}
+
+/* End Site Navigation */ 
